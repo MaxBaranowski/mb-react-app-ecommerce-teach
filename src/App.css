@@ -1,0 +1,12 @@
+:root{
+  --main-blue-color: #202a72;
+  --main-light-blue-color: #009ffd;
+  --main-white-color: #f3f3f3;
+  --main-dark-color: #232528;
+  --main-yellow-color: #ffa400;
+}
+
+body{
+  background-color: var(--main-white-color);
+  color: var(--main-dark-color);
+}
