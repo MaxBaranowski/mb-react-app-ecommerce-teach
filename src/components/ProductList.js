@@ -1,23 +1,23 @@
 import React, { Component } from 'react';
 import { storeProducts as driveStoreProducts } from "../data";
+import Title from "./Title";
 
 class ProductList extends Component {
-    constructor(props) {
-        super(props);
-        console.log(this.state.products)
-    }
     state = {
         products: driveStoreProducts
     };
     render() {
+        console.log(this.state.products)
         return (
-            <div className="container">
-                <div className="row">
-                    <div className="col-6">column one</div>
-                    <div className="col-6">column two</div>
-                    ProductList
+            <React.Fragment>
+                <div className="py-5">
+                    <div className="container">
+                        <Title name="our" title="products" />
+                        <div className="row">
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </React.Fragment>
         );
     }
 }
